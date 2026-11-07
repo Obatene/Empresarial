@@ -1,0 +1,69 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f0f4f8;
+    margin: 0;
+    padding: 30px;
+    color: #333;
+}
+
+header, main, footer {
+    max-width: 900px;
+    margin: 0 auto 20px;
+    padding: 30px;
+    background: white;
+    border-radius: 18px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+header, footer {
+    text-align: center;
+}
+
+h1, h2 {
+    color: #263645;
+}
+
+nav a {
+    display: inline-block;
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 10px;
+}
+
+.cursos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    margin-top: 25px;
+}
+
+.curso {
+    background: #f8fafc;
+    border: 1px solid #dce4ec;
+    border-radius: 15px;
+    padding: 25px;
+}
+
+.curso h3 {
+    color: #007bff;
+}
+
+footer {
+    font-size: 14px;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 15px;
+    }
+
+    header, main, footer {
+        padding: 20px;
+    }
+}
